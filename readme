@@ -1,0 +1,8 @@
+MUISTIINPANO -SOVELLUS
+
+Fetch API (REST)
+
+- Sovellus noutaa javaScriptin fetch(async) -toiminnolla muistiinpanoja notes.json palvelintiedostosta ja tulostaa ne listaksi.
+- Muistiinpanoja voi lisätä, poistaa ja muokata.
+
+> Käyttämiseen tarvitsee json-server laajennuksen (Node). Palvelimen avaus koodi löytyy notes.js -tidostosta kommenttina.

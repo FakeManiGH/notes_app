@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, Arial;
+    color: #000;
+}
+
+body {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: fit-content;
+    margin: 50px 0;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-self: flex-end;
+}
+
+.btn {
+    display: block;
+    padding: 10px 14px;
+    width: fit-content;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #333;
+}
+
+#tallenna {
+    display: none;
+}
+
+.muokataan {
+    color: #999;
+}
+
+#lista {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    list-style-type: none;
+    font-size: 1em;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-width: fit-content;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.list-item:nth-child(even) {
+    background: #d1d1d1;
+}
+
+.notes {
+    width: 500px
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.control {
+    display: block;
+    cursor: pointer;
+}

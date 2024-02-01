@@ -78,8 +78,6 @@ let editNote = async (url, id, date, note) => {
         });
         const data = await haeresponse(response);
         form.reset();
-        document.getElementById('lisaa').value = "Lisää";
-        document.querySelector('.muokataan')?.classList.remove('muokataan');
         location.reload();  // Päivittää sivun. displayNotes() funktio lakkaa toimimasta oiken kun muokkaa enemmän kuin yhtä muistiinpanoa session aikana.
         
     } catch (error) {
@@ -101,8 +99,8 @@ let deleteNote = async (url, id, date, note) => {
         });
         const data = haeresponse(response);
         form.reset();
-        document.getElementById('lisaa').value = "Lisää";
-        document.querySelector('.muokataan')?.classList.remove('muokataan');
+        document.getElementById('lisaa').style.display = "block";
+        document.getElementById('tallenna').style.display = "none";
         displayNotes();
         
     } catch (error) {
